@@ -1,0 +1,376 @@
+
+/* ESTILO GERAL*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+
+body{
+background-color: black;
+height: 100vh;
+}
+
+.interface{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+}
+
+.venum-contato button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: aliceblue;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+h2.titulo{
+    color: white;
+    font-size: 38px;
+    text-align: center;
+
+}
+
+span{
+    color: rgb(21, 255, 0);;
+}
+
+/*ESTILO DO CABEÇARIO*/
+
+header {
+    padding: 15px 4%;
+    box-shadow: 0px 3px 40px 10px #ffffff10;
+    border-bottom: solid 1px rgba(255, 255, 255, 0.115);
+}
+
+header > .interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+header a{
+    color: rgb(185, 185, 185);
+    text-decoration: none;
+    display: inline-block;
+}
+ 
+header .menu-desktop a:hover{
+    color: #ffffff;
+    transform: scale(1.05);
+    transition: .2s;
+}
+
+header nav ul{
+    list-style-type: none;
+
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.logo img {
+    width: 100px; /* Ajuste o valor conforme desejado */
+    height: auto; /* Isso mantém a proporção original da imagem */
+    border-radius: 10px; /* Ajuste o valor conforme desejado para as bordas arredondadas */
+    
+}
+
+.venum-contato button {
+    transition: background-color 0.4s ease, transform 0.4s ease; /* Adapte a duração e a função de temporização conforme desejado */
+}
+
+.venum-contato button:hover, form .btn-enviar input[type=submit]:hover {
+    box-shadow: 0px 0px 5px rgb(21, 255, 0);
+    transform: scale(1.05);
+    background-color: rgb(21, 255, 0);
+    
+}
+
+/*ESTILO DO TOPO DO SITE*/
+
+section.topo-do-site{
+    padding: 40px 6%;
+}
+
+section.topo-do-site.flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.topo-do-site h1{
+    color: #ffff;
+    font-size: 42px;
+    line-height: 40px;
+}
+
+.topo-do-site .txt-topo-site p{
+    color: #ffff;
+    margin: 20px 0px;
+    margin-right: 15%;
+}
+
+.img-topo-site img {
+    width: 350px;
+    height: auto;
+    border-radius: 10px;
+    margin-left: 2%; /* Ajuste o valor conforme desejado */
+    margin-right: 2%; /* Ajuste o valor conforme desejado */
+    box-shadow: 0px 0px 10px rgba(21, 255, 0, 0.579);
+    border: 1px solid white; /* 2px de largura, cor branca; ajuste conforme desejado */
+    border-radius: 8px; /* Borda arredondada; ajuste conforme desejado */
+
+}
+
+.txt-topo-site{
+        margin-top: 60px; /* Ajuste o valor conforme desejado */
+}
+
+/*--ISSO-QUE-USEI-PARA-INIMAR-A-IMAGEM*/
+.topo-do-site .img-topo-site img{
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar {
+    0%{
+        top:0;
+    }
+
+    100%{
+        top: 30px;
+    }
+}
+/*--FINALIZEI-ISSO-QUE-USEI-PARA-INIMAR-A-IMAGEM*/
+
+/*--ESTILOS DAS ESPECIALIDADES--*/
+
+.especialidades .titulo span{
+    color: rgb(21, 255, 0);
+}
+section.especialidades{
+    padding: 40px 4%;
+}
+
+section.especialidades .flex{
+    gap: 40px;
+}
+.especialidades .especialidades-box{
+    color: white;
+    padding: 40px;
+    margin-top: 45px;
+    border-radius: 20px;
+    transition: .2s;
+}
+
+.especialidades .especialidades-box:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.324);
+}
+
+.especialidades .especialidades-box i{
+    font-size: 70px;
+    color: rgb(21, 255, 0);
+    
+}
+
+.especialidades .especialidades-box h3{
+    font-size: 28px;
+    margin: 15px 0px;
+}
+
+/* ESLISO DO SOBRE */
+section.sobre{
+    padding: 50px 4%;
+    margin-bottom: 40px;
+    box-shadow: 0px 3px 40px 10px #ffffff10;
+    border: solid 1px rgba(255, 255, 255, 0.115);
+}
+
+
+section.sobre .flex{
+    align-items: center;
+    gap: 60px;
+}
+
+.txt-sobre{
+    color: #ffffff;
+}
+
+.img-sobre img{
+    width: 350px;
+    height: auto;
+    border-radius: 10px;
+    border-radius: 8px; /* Borda arredondada; ajuste conforme desejado */
+}
+
+.sobre .txt-sobre h2{
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+
+.sobre .txt-sobre h2 span{
+    color: rgb(21, 255, 0);
+    
+}
+
+.sobre .txt-sobre p{
+    margin: 20px 0;
+    text-align: justify;
+}
+
+.btn-social button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    font-size: 22px;
+    cursor: pointer;
+    margin: 0 3px;
+}
+
+.btn-social button:hover {
+    background-color: rgb(21, 255, 0);
+    box-shadow: 0px 0px 5px rgb(21, 255, 0);
+    transform: scale(1.05);
+    transition: .3s;
+
+}
+
+/* ESTILO DO PORTIFÓLIO*/
+
+section.portifolio{
+    position: 80px 4%;
+}
+
+section.portifolio .flex{
+    justify-content: space-around;
+    margin-top: 60px;
+}
+
+.img-port{
+    width: 360px;
+    height: 460px;
+    background-size: cover;
+    background-position: 100% 0%;
+    transition: 8s;
+    cursor: pointer;
+    border-radius: 40px;
+    position: relative;
+}
+
+.img-port:hover{
+    background-position: 100% 100%;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000b8;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: #ffff;
+    opacity: 0;
+    transition: .5s;
+}
+
+.overlay:hover{
+    opacity: 1;
+}
+
+/* ESTILOS DO FORMULÁRIO DE CONTATO */
+
+section.formulario{
+    padding: 80px 4%;
+}
+
+form{
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+form input, form textarea {
+    width: 100%;
+    background-color: #242424;
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: #ffff;
+    font-size: 18px;
+}
+
+form textarea{
+    resize: none;
+    max-height: 100px;
+}
+
+form .btn-enviar{
+    margin-top: 20px;
+    text-align: center;
+
+}
+
+form .btn-enviar input[type=submit]{
+    width: 120PX;
+    background-color: rgb(21, 255, 0);
+    color:#000000 ;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .2s;
+}
+
+/* ESTILO DO RODAPÉ*/
+
+footer{
+    padding: 60px 4%;
+    box-shadow: 0px 3px 40px 10px #ffffff10;
+    border-top: solid 1px rgba(255, 255, 255, 0.115);
+}
+
+footer .flex{
+    justify-content: space-between;
+}
+
+footer .line-footer{
+    padding: 20px 0;
+}
+
+.borda{
+    border-top: 2px solid rgb(21, 255, 0);
+}
+footer .line-footer p i{
+    color: rgb(21, 255, 0);
+    font-size: 22px;
+    margin-right: 7px;
+}
+
+footer .line-footer p a{
+    color: white;
+
+}
